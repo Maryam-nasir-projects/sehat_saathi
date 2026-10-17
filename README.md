@@ -1,4 +1,4 @@
-# sehat-saathi-project (Karachi Hospital Directory)
+# sehat_saathi (Karachi Hospital Directory)
 
 Sehat Saathi is a responsive, multilingual hospital directory website designed to help people explore hospital information in Karachi, Pakistan.
 
