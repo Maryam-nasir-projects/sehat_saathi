@@ -660,12 +660,31 @@ const messageCounter = $("messageCounter");
 const MAX_MESSAGE = 200;
 
 /* Live character counter (input event) */
-contactMessage.addEventListener("input", function () {
+
+/* Live character counter (input event) */
+function updateMessageCounter() {
   const length = contactMessage.value.length;
+
   messageCounter.textContent = length + " / " + MAX_MESSAGE;
-  messageCounter.classList.toggle("limit", length >= MAX_MESSAGE);
+
+  messageCounter.classList.toggle(
+    "limit",
+    length >= MAX_MESSAGE
+  );
+
   clearError(contactMessage, contactMessageMsg);
-});
+}
+
+contactMessage.addEventListener("input", updateMessageCounter);
+
+// Initialize the counter on page load
+updateMessageCounter();
+
+clearOnInput([
+  [contactName, contactNameMsg],
+  [contactEmail, contactEmailMsg],
+]);
+
 
 clearOnInput([
   [contactName, contactNameMsg],
