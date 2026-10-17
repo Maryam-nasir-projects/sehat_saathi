@@ -4,7 +4,7 @@ Sehat Saathi is a responsive, multilingual hospital directory website designed t
 
 ## 🌐 Live Website
 
-[Visit Sehat Saathi](https://maryam-nasir-projects.github.io/sehat-saathi-projects/)
+[Visit Sehat Saathi](https://maryam-nasir-projects.github.io/sehat_saathi/)
 
 ## 📌 Project Overview
 
